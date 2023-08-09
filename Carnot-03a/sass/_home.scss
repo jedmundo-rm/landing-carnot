@@ -1,0 +1,474 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+@font-face {
+  font-family: SourceSansPro;
+  src: url('/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf'); /* IE9 Compat Modes */
+  src: url('/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: SourceSansProBold;
+  src: url('/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf'); /* IE9 Compat Modes */
+  src: url('/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+
+.main {
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+  div{
+    &.row{
+      padding: 8% 0;
+      @media (min-width: 600px) {
+        padding: 32px 0;
+      }
+    }
+    #text{
+      img{
+        width: 100%;
+        @media (min-width: 600px) {
+          width: 520px;
+        }        
+      }
+    }
+  }
+}
+
+
+img {
+  width: 100%;
+}
+
+#logo{
+  img{
+    width: auto;
+  }
+}
+
+.center{
+  text-align: center;
+}
+
+$blue: #091663;
+$light-blue: #0057DC;
+$light-green: #4DCEC8;
+$white: #fff;
+
+.blue{
+  color: $blue; 
+}
+.light-blue{
+  color: $light-blue;
+}
+.light-green{
+  color: $light-green;
+}
+.white{
+  color: $white; 
+}
+
+$dark-green: #006d4c;
+$blue-green: #12ac94;
+$light-lemon: #fadd00;
+
+.dark-green{
+  color: $dark-green; 
+}
+.light-lemon{
+  color: $light-lemon;
+}
+
+
+// @font-face { font-family: BebasNeue; src: url('fonts/bebas_neue/BebasNeue-Regular.otf'); } 
+
+body {
+  // width: 1080px;
+  // height: 1920px;
+  font-family: SourceSansPro;
+  overflow-x: hidden;
+}
+
+p{
+  font-size: 16pt;
+  @media (min-width: 992px) {
+    font-size: 16pt;
+  }   
+}
+
+li{
+  font-size: 12pt;
+  @media (min-width: 992px) {
+    font-size: 22pt;
+  }   
+}
+
+.bold{
+  font-weight: bold;
+}
+
+h1{
+  font-size: 36pt;
+  font-weight: bold;
+  color: #fff;
+  @media (min-width: 992px) {
+    font-size: 80pt;
+  }     
+  span{
+    color: #33d1c9;
+  }
+}
+
+h2{
+  font-family: SourceSansProBold;
+  font-size: 26pt;
+  font-weight: bold;
+  color: #fff;
+  @media (min-width: 992px) {
+    font-size: 36pt;
+  }     
+  sup{
+    font-size: 12pt;
+    top: -1.5em;
+  }
+}
+
+sup{
+  font-size: 6pt;
+  top: -1em;
+  @media (min-width: 992px) {
+    font-size: 12pt;
+    top: -0.5em;
+  }
+}
+
+#space{
+  padding: 1% 0;
+  @media (min-width: 992px) {
+    padding: 2% 0;
+  }
+
+}
+
+
+
+#home{
+
+  .header{
+    background-image: url('../images/FONDO_CIELO.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+
+    #logo{
+      width: auto;
+      position: inherit;
+      text-align: center;
+      padding: 60px;
+      @media (min-width: 992px) {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+    
+  }
+
+  .ovalos{
+    .ovalo{
+      border-radius: 50%/20%;
+      padding: 60px;
+      text-align: center;
+
+      @media (min-width: 992px) {
+        margin: 0;
+      }
+
+      &.ovalo1{
+        background-color: $blue;
+        color: #fff;
+      }
+      &.ovalo2{
+        background-color: $light-green;
+        color: $blue;
+        ul{
+          li{
+            color: $blue;
+          }
+        }
+      }
+      &.ovalo3{
+        background-color: $light-blue;
+        color: #fff;
+      }    
+
+      ul{
+        text-align: left;
+
+        li{
+          color: #fff;
+          font-size: 16pt;
+        }        
+      }
+
+      
+      .show-more{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        font-weight: bold;
+        margin: 0 auto;
+      
+        text-indent: inherit ;
+        opacity: 1 ;
+        cursor: pointer;
+
+        &:before {
+          content: "+";
+          font-size: 34pt;
+          text-align: center;
+          margin-left: -10px;
+          margin-top: 5px;
+          position: absolute;
+        }
+
+        &.btn1{
+          background-color: $light-blue;
+          color: #fff;
+        }
+
+        &.btn2{
+          background-color: $blue;
+          color: #fff;
+          }
+
+        &.btn3{
+          background-color: $white;
+          color: $blue;
+        }
+      }
+    }
+
+  }
+
+  .cuadro{
+    background-color: $light-blue;
+    border-radius: 30px;
+    padding-bottom: 0px;
+    @media (min-width: 992px) {
+      border-radius: 30px 30px 0 0;
+      padding-bottom: 170px;
+    }
+  }
+
+  
+  .cuadros-wrapper{
+    margin-top: 0;
+    @media (min-width: 992px) {
+      margin-top: -200px;
+    }
+    .subcuadro{
+      padding: 60px;
+      &.subcuadro1{
+        border-radius: 10%/2%;
+        /*background-image: url("../images/cuadro/Rectangle\ 29.png");
+        background-repeat: no-repeat;
+        background-size: contain;*/
+        background-color: $blue;
+        color: #fff;
+        
+        @media (min-width: 768px) {
+          border-radius: 10%/5%;
+        }
+      }
+      &.subcuadro2{
+        border-radius: 10%/2%;
+        margin-top: 0px;
+        background-color: $light-green;
+        @media (min-width: 992px) {
+          border-radius: 10%/10%;
+          margin-top: 130px;
+        }
+      }    
+    }      
+  }
+
+
+  .icons{
+
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+
+      img{
+        max-width: 220px;
+      }
+      p{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 16pt;
+      }      
+    }
+
+  }
+
+  .btn{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+.page {
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+  div{
+    &.row{
+      padding: 3% 0;
+      @media (min-width: 992px) {
+        padding: 1% 0;
+      }     
+    }
+
+    &#icons{
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 100%;
+        @media (min-width: 992px) {
+          width: 992px;
+        }        
+      }
+    }
+  }
+}
+
+
+.legales{
+  background-color: $blue;
+  color: #fff;
+  padding: 10px 10px 0 10px;
+  border-radius: 20px 20px 0 0;
+  margin-top: 220px;
+
+  @media (min-width: 992px) {
+    padding: 100px 100px 0 100px;
+  }   
+
+  &:before {
+    content: "";
+    background-image: url('../images/imagen_footer.png');
+    height: 270px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center  2px;
+    margin-top: -200px;
+    @media screen and (min-width:768px) {
+        height: 500px;
+        margin-top: -300px;
+    } 
+  }
+
+
+  p{
+    font-size: 6pt;
+    margin-bottom: 0;
+    @media (min-width: 992px) {
+      font-size: 6pt;
+    }        
+  }
+ 
+  img{
+    margin: 0 auto;
+    width: 600px;
+  }
+}
+
+.uno {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  /* animation-iteration-count: infinite; */
+}
+
+.dos {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.tres {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.cuatro {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.cinco {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.seis {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.siete {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+.ocho {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+
+.button{
+        height: 60px;
+        width: 260px;
+        background-color: aliceblue;
+        position: absolute;
+        top: 225px;
+        left: 65px;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 20;
+}
+
+.activebutton::before {
+  transform: rotate(45deg);
+}

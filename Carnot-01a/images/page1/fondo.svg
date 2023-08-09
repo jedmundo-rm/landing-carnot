@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="839" height="681" viewBox="0 0 839 681">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-5 {
+        fill: #c8bf00;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_321" data-name="Rectángulo 321" class="cls-1" width="839" height="681" transform="translate(941 1945)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectángulo_315" data-name="Rectángulo 315" class="cls-2" width="942.543" height="868.233"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_272" data-name="Enmascarar grupo 272" class="cls-3" transform="translate(-941 -1945)">
+    <g id="Grupo_571" data-name="Grupo 571" transform="translate(970.089 1103.252)">
+      <g id="Grupo_564" data-name="Grupo 564" transform="matrix(0.891, 0.454, -0.454, 0.891, -85.4, 697.855)">
+        <g id="Grupo_563" data-name="Grupo 563" class="cls-4" transform="translate(166.042 -25.31)">
+          <path id="Trazado_27692" data-name="Trazado 27692" class="cls-5" d="M452.707,863.342c31.433,14.24,67.26-5.409,97.761-23.135a1916.9,1916.9,0,0,0,205.88-138.038c68.111-52.4,140.9-114.449,171.371-207.121,26.829-81.6,15.295-175.667-18.971-249.892s-89.02-130.6-148.277-174.563C677.092,8.732,568.539-30.159,480.571,30.1c-54.226,37.148-96.26,109.134-157.07,118.2-58.016,8.648-108.5-44.458-166.039-52.593-45.371-6.415-93.77,17.773-123.947,61.944S-7.632,264.541,5.418,318.264c10.312,42.453,33.934,77.514,47.166,118.587,24.988,77.564,12.572,174.455,53.852,239.977,40.453,64.209,115.43,72.387,181.875,80.957,63.076,8.137,123.657,19.853,151.487,85.557A65,65,0,0,0,452.707,863.342Z" transform="translate(0 0)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
